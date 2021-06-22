@@ -19,10 +19,14 @@ function change() {
 }
 
 function getRate() {
-    axios.get('https://data.fixer.io/api/latest?access_key=feffa59c1f32fea95108a48404bc9f3b') // Base Currency:EUR
+    fetch('https://data.fixer.io/api/latest?access_key=feffa59c1f32fea95108a48404bc9f3b') // Base Currency:EUR
         .then(function (response) {
-            // console.log(response);
-            let rates = response.data.rates
+            console.log(response);
+            return response.json()
+        })
+        .then(function (data) {
+            console.log(data);
+            let rates = data.rates
             // console.log(rates);
             const valueA = currencyA.value
             const valueB = currencyB.value
