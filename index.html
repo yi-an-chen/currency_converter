@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <title>匯率計算機</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>貨幣兌換計算機<br>Currency Converter</h1>
+    <div class="container">
+        <div class="item">
+            <select id="currencyA">
+                <option value="TWD" selected>&emsp;台幣&emsp; TWD</option>
+                <option value="USD">&emsp;美元&emsp; USD</option>
+                <option value="JPY">&emsp;日圓&emsp; JPY</option>
+                <option value="KRW">&emsp;韓元&emsp; KRW</option>
+                <option value="GBP">&emsp;英鎊&emsp; GBP</option>
+                <option value="EUR">&emsp;歐元&emsp; EUR</option>
+                <option value="CNY">&ensp;人民幣&ensp; CNY</option>
+                <option value="HKD">&emsp;港幣&emsp; HKD</option>
+                <option value="AUD">&emsp;澳幣&emsp; AUD</option>
+                <option value="CAD">加拿大幣 CAD</option>
+                <option value="CHF">瑞士法郎 CHF</option>
+                <option value="THB">&emsp;泰銖&emsp; THB</option>
+                <option value="IDR">&ensp;印尼盾&ensp; IDR</option>
+            </select>
+            <input type="number" placeholder="請輸入金額" id="amountA">
+        </div>
+        <div class="item item-button">
+            <button>⇄</button>
+        </div>
+        <div class="item"><select id="currencyB">
+                <option value="TWD">&emsp;台幣&emsp; TWD</option>
+                <option value="USD" selected>&emsp;美元&emsp; USD</option>
+                <option value="JPY">&emsp;日圓&emsp; JPY</option>
+                <option value="KRW">&emsp;韓元&emsp; KRW</option>
+                <option value="GBP">&emsp;英鎊&emsp; GBP</option>
+                <option value="EUR">&emsp;歐元&emsp; EUR</option>
+                <option value="CNY">&ensp;人民幣&ensp; CNY</option>
+                <option value="HKD">&emsp;港幣&emsp; HKD</option>
+                <option value="AUD">&emsp;澳幣&emsp; AUD</option>
+                <option value="CAD">加拿大幣 CAD</option>
+                <option value="CHF">瑞士法郎 CHF</option>
+                <option value="THB">&emsp;泰銖&emsp; THB</option>
+                <option value="IDR">&ensp;印尼盾&ensp; IDR</option>
+            </select>
+            <input type="text" id="amountB" disabled>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2021 by YI-AN CHEN</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="all.js"></script>
+</body>
+
+</html>

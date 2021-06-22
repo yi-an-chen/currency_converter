@@ -1,0 +1,104 @@
+body {
+    background-color: #eef;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.item-button {
+    margin: 40px 10px 0;
+}
+
+button {
+    height: 35px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px #faa solid;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f50;
+    background-color: #fff;
+}
+
+button:hover {
+    background-color: #ffa;
+}
+
+select {
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+    padding: 0 9px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 113px;
+    height: 30px;
+    font-size: 12px;
+    text-align: right;
+}
+
+#amountB {
+    background-color: #ddd;
+}
+
+.footer {
+    background-color: #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+    .container {
+        width: 80%;
+        max-width: 800px;
+    }
+    .item {
+        margin-top: 80px;
+    }
+    .item-button {
+        margin: 80px 50px 0;
+    }
+    button {
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+    select {
+        width: 200px;
+        height: 42px;
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    input {
+        width: 192px;
+        height: 38px;
+        font-size: 18px;
+    }
+}
