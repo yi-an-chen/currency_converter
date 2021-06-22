@@ -12,14 +12,14 @@ amountB.addEventListener('input', getRate)
 button.addEventListener('click', change)
 
 function change() {
-    const changeVal=currencyA.value
+    const changeVal = currencyA.value
     currencyA.value = currencyB.value
     currencyB.value = changeVal
     getRate()
 }
 
 function getRate() {
-    axios.get('http://data.fixer.io/api/latest?access_key=feffa59c1f32fea95108a48404bc9f3b') // Base Currency:EUR
+    axios.get('https://data.fixer.io/api/latest?access_key=feffa59c1f32fea95108a48404bc9f3b') // Base Currency:EUR
         .then(function (response) {
             // console.log(response);
             let rates = response.data.rates
