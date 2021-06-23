@@ -7,7 +7,7 @@
   * CSS
   * JavaScript
 * API 串接
-  * 使用 axios
+  * 使用 fetch
 * 網頁排版
   * Flexbox
 * 響應式網頁 (RWD)
