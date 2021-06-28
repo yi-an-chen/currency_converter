@@ -1,3 +1,5 @@
+// API Source: https://exchangerate.host/#/
+
 const currencyA = document.querySelector('#currencyA')
 const currencyB = document.querySelector('#currencyB')
 const amountA = document.querySelector('#amountA')
@@ -19,7 +21,7 @@ function change() {
 }
 
 function getRate() {
-    fetch('https://data.fixer.io/api/latest?access_key=feffa59c1f32fea95108a48404bc9f3b') // Base Currency:EUR
+    fetch('https://api.exchangerate.host/latest') // Base Currency:EUR
         .then(function (response) {
             console.log(response);
             return response.json()
