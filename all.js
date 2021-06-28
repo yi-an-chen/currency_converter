@@ -23,11 +23,11 @@ function change() {
 function getRate() {
     fetch('https://api.exchangerate.host/latest') // Base Currency:EUR
         .then(function (response) {
-            console.log(response);
+            // console.log(response);
             return response.json()
         })
         .then(function (data) {
-            console.log(data);
+            // console.log(data);
             let rates = data.rates
             // console.log(rates);
             const valueA = currencyA.value
