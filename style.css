@@ -4,15 +4,15 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 60px;
+    line-height: 1.5;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    width: 95%;
     margin: auto
 }
 
@@ -20,19 +20,19 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .item-button {
-    margin: 40px 10px 0;
+    margin: 80px 50px 0;
 }
 
 button {
-    height: 35px;
+    height: 40px;
     width: 40px;
+    font-size: 18px;
     border-radius: 50%;
     border: 3px #faa solid;
-    font-size: 16px;
     font-weight: bold;
     color: #f50;
     background-color: #fff;
@@ -44,17 +44,17 @@ button:hover {
 }
 
 select {
-    width: 120px;
-    height: 35px;
-    font-size: 12px;
-    padding: 0 9px;
+    width: 200px;
+    height: 42px;
+    font-size: 18px;
+    padding: 0 30px;
     margin-bottom: 20px;
 }
 
 input {
-    width: 113px;
-    height: 30px;
-    font-size: 12px;
+    width: 192px;
+    height: 38px;
+    font-size: 18px;
     text-align: right;
 }
 
@@ -71,35 +71,31 @@ input {
     text-align: center;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:575px) {
     h1 {
-        font-size: 32px;
-        margin-top: 60px;
+        font-size: 24px;
+        margin-top: 25px;
     }
-    .container {
-        width: 80%;
-        max-width: 800px;
+    .container{
+        flex-direction: column;
     }
     .item {
-        margin-top: 80px;
+        margin-top: 40px;
+    }
+    .item:nth-child(3){
+        margin-top: 0;
     }
     .item-button {
-        margin: 80px 50px 0;
+        margin: 25px 0;
     }
     button {
-        height: 40px;
-        width: 40px;
-        font-size: 18px;
+        transform: rotate(0.25turn);
     }
-    select {
-        width: 200px;
-        height: 42px;
-        font-size: 18px;
-        padding: 0 30px;
+    select{
+        height: 35px;
+        margin-bottom: 25px;
     }
-    input {
-        width: 192px;
-        height: 38px;
-        font-size: 18px;
+    input{
+        height: 30px;
     }
 }
